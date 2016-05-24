@@ -6,6 +6,7 @@ package com.james;
 public class InvItem {
     String name;
     Integer quantity;
+    String category;
 
     public String getName() {
         return name;
@@ -26,7 +27,16 @@ public class InvItem {
     public InvItem(String name, Integer quantity) {
         this.name = name;
         this.quantity = quantity;
+    }
 
+    public String getCategory() {
+        return category;
+    }
 
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public InvItem() {
     }
 }
