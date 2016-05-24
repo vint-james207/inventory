@@ -25,7 +25,7 @@ public class Main {
                 case "1":
                     System.out.println("Enter new item");
                     String text = scanner.nextLine();
-                    InvItem newItem = new InvItem(text, 0);
+                    InvItem newItem = new InvItem(text,0);
                     items.add(newItem);
                     break;
 
@@ -33,7 +33,7 @@ public class Main {
                     System.out.println("Enter # of item you wish to remove");
                     String numItem = scanner.nextLine();
                     int num = Integer.valueOf(numItem);
-                    items.remove(numItem);
+                    items.remove(num-1);
                     break;
 
                 case "3":
